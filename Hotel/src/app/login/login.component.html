@@ -1,0 +1,13 @@
+<body>
+    <div class="login-box">
+        <h1>Login Here</h1>
+            <form>
+            <p>Username</p>
+            <input type="text" name="username" [(ngModel)]="username" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="password" [(ngModel)]="password" placeholder="Enter Password">
+             <input type="submit" name="submit"  (click)=checkLogin() class="btn btn-success" value="Login">
+            </form>
+    </div>
+</body>    
+   
