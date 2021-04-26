@@ -1,3 +1,6 @@
+<body class="background">
+    <img src="assets/images/image.jpg" class="back">  
+<div class=REC> 
 <h2> Guest List</h2>
 <table class="table table-striped">
     <thead>
@@ -32,11 +35,11 @@
             <td> {{ guest.zipcode }} </td>
             <td>
                 <button (click)="updateGuest(guest.emailid)" class="btn btn-info"> Update</button>
-                <button (click)="deleteGuest(guest.emailid)" class="btn btn-danger" style="margin-left: 10px">
-                    Delete</button>
-                <button (click)="guestDetails(guest.emailid)" class="btn btn-info" style="margin-left: 10px">
-                    View</button>
+                <button (click)="deleteGuest(guest.emailid)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+                <button (click)="guestDetails(guest.emailid)" class="btn btn-info" style="margin-left: 10px"> View</button>
             </td>
         </tr>
     </tbody>
 </table>
+</div>
+</body>
