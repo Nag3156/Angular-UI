@@ -1,4 +1,7 @@
-.back{
+h1{
+  text-align: center;
+  color :black ;
+}.back{
     width: 100%;
     height: 100%;
     background-size: "cover";
