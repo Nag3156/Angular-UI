@@ -23,7 +23,7 @@ export class CreateRoomComponent implements OnInit {
       console.log(data);
       this.goToRoomList();
     },
-      error => console.log(error));
+      error => this.goToRoomList());
   }
 
   goToRoomList() {

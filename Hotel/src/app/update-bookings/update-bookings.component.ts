@@ -30,7 +30,7 @@ export class UpdateBookingsComponent implements OnInit {
     this.reservationService.updateBookings(this.id, this.reservation).subscribe(data => {
       this.goToReservationList();
     }
-      , error => console.log(error));
+      , error => this.goToReservationList());
   }
 
   goToReservationList() {

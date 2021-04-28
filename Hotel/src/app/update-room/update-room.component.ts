@@ -32,7 +32,7 @@ export class UpdateRoomComponent implements OnInit {
     this.roomService.updateRoom(this.id, this.room).subscribe(data => {
       this.goToRoomList();
     }
-      , error => console.log(error));
+      , error => this.goToRoomList());
   }
 
   goToRoomList() {
