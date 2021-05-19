@@ -1,7 +1,7 @@
 export class Guest {
     id: string;
     guestname: string;
-    age: string;
+    age: number;
     gender: string;
     noofchildren: string;
     noofadults: string;

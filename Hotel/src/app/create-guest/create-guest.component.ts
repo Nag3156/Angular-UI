@@ -9,6 +9,16 @@ import { Router } from '@angular/router';
 })
 export class CreateGuestComponent implements OnInit {
 
+  name = 'Angular 5';
+  numberOnly(event): boolean {
+    const charCode = (event.which) ? event.which : event.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+      return false;
+    }
+    return true;
+
+  }
+
   guest: Guest = new Guest();
   constructor(private guestService: GuestService,
     private router: Router) { }

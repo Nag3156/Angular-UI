@@ -27,6 +27,7 @@ import { ReservationDetailsComponent } from './reservation-details/reservation-d
 import { PaymentGatewayComponent } from './payment-gateway/payment-gateway.component';
 import { UpdateBookingsComponent } from './update-bookings/update-bookings.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AlphaDirective } from './alpha.directive';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PaymentGatewayComponent,
     UpdateRoomComponent,
     UpdateBookingsComponent,
+    AlphaDirective,
 
   ],
   imports: [

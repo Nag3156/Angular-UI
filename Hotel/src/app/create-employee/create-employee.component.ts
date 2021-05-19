@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Employee } from '../employee';
 import { EmployeeService } from '../employee.service';
+import { Validators } from '@angular/forms';
+import { FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-create-employee',
@@ -10,11 +13,24 @@ import { Router } from '@angular/router';
 })
 export class CreateEmployeeComponent implements OnInit {
 
+  name = 'Angular 6'
+
+  numberOnly(event): boolean {
+    const charCode = (event.which) ? event.which : event.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+      return false;
+    }
+    return true;
+
+  }
+
   employee: Employee = new Employee();
+  myForm: FormGroup;
   constructor(private employeeService: EmployeeService,
     private router: Router) { }
 
-  ngOnInit(): void {
+  ngOnInit() : void {
+   
   }
 
   saveEmployee() {
@@ -31,7 +47,10 @@ export class CreateEmployeeComponent implements OnInit {
   }
 
   onSubmit() {
+    alert("NEW Employee Saved");
     console.log(this.employee);
     this.saveEmployee();
   }
+
+ 
 }

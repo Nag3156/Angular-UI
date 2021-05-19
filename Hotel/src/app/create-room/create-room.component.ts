@@ -10,6 +10,17 @@ import { Router } from '@angular/router';
 })
 export class CreateRoomComponent implements OnInit {
 
+  name = 'Angular 6'
+
+  numberOnly(event): boolean {
+    const charCode = (event.which) ? event.which : event.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+      return false;
+    }
+    return true;
+
+  }
+
   room: Room = new Room();
   constructor(private roomService: RoomService,
     private router: Router) { }
