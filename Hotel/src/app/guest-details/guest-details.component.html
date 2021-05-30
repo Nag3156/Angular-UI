@@ -1,7 +1,7 @@
 <body>
     <img src="assets/images/image.jpg" class="back">
-    <div class=REC>
-<h2> View Guest Details</h2>
+    <div class="REC" id="content" #content>
+<h2>Guest Details</h2>
 <div>
 
     <div>
@@ -37,6 +37,7 @@
     <div>
         <label> <b> Zipcode: </b></label> {{guest.zipcode}}
     </div>
+    <button (click)="downloadPDF()">Export To PDF</button>
 </div>
 </div>
 </body>

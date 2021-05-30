@@ -7,7 +7,7 @@ import { Guest } from './guest';
   providedIn: 'root'
 })
 export class GuestService {
-  private baseURL = "http://localhost:8091/api/v1/guests";
+  private baseURL = "http://localhost:8080/guest_management_service/api/v1/guests";
 
   constructor(private httpClient: HttpClient) { }
 

@@ -8,7 +8,7 @@ import { Room } from './room';
 })
 export class RoomService {
 
-  private baseURL = "http://localhost:8078/api/room/rooms";
+  private baseURL = "http://localhost:8080/Room_Management_System/api/room/rooms";
 
   constructor(private httpClient: HttpClient) { }
 

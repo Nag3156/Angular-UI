@@ -8,7 +8,6 @@
             <th> Roomno</th>
             <th> Roomtype </th>
             <th> Price </th>
-            <th> Status</th>
             <th> Actions </th>
         </tr>
     </thead>
@@ -18,7 +17,6 @@
             <td> {{ room.roomno }} </td>
             <td> {{ room.roomtype }} </td>
             <td> {{ room.price }} </td>
-            <td> {{ room.status }} </td>
 
             <td>
                 <button (click)="updateRoom(room.roomno)" class="btn btn-info"> Update</button>

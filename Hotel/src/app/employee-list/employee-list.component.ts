@@ -43,4 +43,11 @@ export class EmployeeListComponent implements OnInit {
       this.getEmployees();
     })
   }
+
+  onDeleteNotification(id: number) {
+    const i = this.employees.findIndex(e => e.id === id);
+    if (i !== -1) {
+      this.employees.splice(i, 1);
+    }
+  }
 }

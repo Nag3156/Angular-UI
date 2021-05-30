@@ -28,6 +28,8 @@ import { PaymentGatewayComponent } from './payment-gateway/payment-gateway.compo
 import { UpdateBookingsComponent } from './update-bookings/update-bookings.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AlphaDirective } from './alpha.directive';
+import { AccordionComponent } from './accordion/accordion.component';
+import { MatConfirmDialogComponent } from './mat-confirm-dialog/mat-confirm-dialog.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +55,8 @@ import { AlphaDirective } from './alpha.directive';
     UpdateRoomComponent,
     UpdateBookingsComponent,
     AlphaDirective,
+    AccordionComponent,
+    MatConfirmDialogComponent,
 
   ],
   imports: [
@@ -64,6 +68,7 @@ import { AlphaDirective } from './alpha.directive';
     BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[MatConfirmDialogComponent]
 })
 export class AppModule { }
